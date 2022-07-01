@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="utf-8">
+		<title>Workout Plan</title>
+		<link rel="stylesheet" href="./one_page_website.css">
+		<script src="./JS/main.js" ></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	</head>
+
+	<body>
+
+	<header>
+		<h2>Workout Plan</h2>
+	</header>
+		<h2>Workout Plan: Push Pull Legs</h2>
+		<p>In the “push” workout you train all the upper body pushing muscles, i.e. the chest, shoulders and triceps.
+		In the “pull” workout you train all the upper body pulling muscles,	i.e. the back and biceps. And in the “legs”
+		workout you train the entire lower body, i.e. the quads, hamstrings, calves and abdominals.</p>
+
+
+<!-- NAV -->
+	<div>
+		<div>
+		<ul>
+			<a href="#home" id="link"><li>Home</li></a>	
+			<a href="#gallery"><li>Gallery</li></a>
+			<a href="#videos"><li>Video</li></a>
+			<a href="#contact"><li>Queries and bookings</li></a>
+		</ul>
+		</div>
+	</div>	
+<!--END NAV -->
+
+<!--HOME -->
+	<div id="home">
+		<div>
+			<div>
+				<span>Here are some workouts to begin the program</span>
+			</div>
+		</div>
+	</div>
+<!--END HOME -->
+
+
+<!-- GALLERY -->
+			<div class="gallery">
+				<h2 style="text-align:center">Gallery</h2>
+					<h2>Push Day</h2>
+			<div class="row">
+				<div class="column">
+					<img src="./images/Push_day.jpg" alt="Push Day"width=300 height=300
+					 onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+				</div>
+			</div>
+		</div>
+			<div>
+				<h2>Pull Day</h2>
+				<div class="row">
+					<div class="column">
+				<img src="./images/Pull_day.png" alt="Pull Day" width=300 height=300
+				onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+					</div>
+				</div>
+			</div>
+			<div>
+				<h2>Leg Day</h2>
+				<div class="row">
+					<div class="column">
+					<img src="./images/Leg_day.jpg" alt="Leg Day" width=300 height=300
+					onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+					</div>	
+				</div>
+			</div>
+			<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="./images/Push_day.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./images/Pull_day.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./images/Leg_day.jpg" style="width:100%">
+    </div>
+
+	    <div class="column">
+      <img class="demo cursor" src="./images/Push_day.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/Pull_day.png" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/Leg_day.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+
+  </div>
+</div>
+
+<!-- VIDEOS -->
+				<h1>Video</h1>
+				<p>Watch this video to learn more<p>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/qVek72z3F1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- END VIDEOS -->
+
+
+<!-- RSVP -->
+<section>
+	<div id="contact">
+		<div>
+				<h1>Queries and bookings</h1>
+			<div>
+				<h2><span>Join us and learn more about the program by dropping us a message or booking a season.</span>
+				<br />book your session today!
+				</h2>
+				<p>Please provide us with your basic contact information and any addiational information and we will get back to you as soon as possible.</p>
+<div>
+	<form action="" method="post">
+	<input class="ravp" type="text" value="First Name">
+	<input class="ravp" type="text" value="Last Name">
+	<input class="ravp" type="text" value="Email Address">
+	<input class="ravp" type="text" value="Phone Number"> <br>
+	<input class="ravp" type="text" value="Message" size="90">
+<div class="form-spacer">
+	<label class="terms">Terms and Coditions</label>
+</div>
+	<div>
+		<input type="submit" value="Submit">
+	</div>
+	</form>
+</div>
+			</div>	
+	</div>
+</div>
+</section>
+<!--END RSVP -->
+
+<!-- FOOTER -->
+	<div>
+		https://builtwithscience.com/push-pull-legs-routine/  &nbsp;| &nbsp; &copy; 2022
+	</div>
+<!-- END FOOTER -->
+
+	</body>
+</html>
